@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://curtisgry.github.io/sunnyside-agency/)
+- Live Site URL: [Here](https://curtisgry.github.io/sunnyside-agency/)
 
 ## My process
 

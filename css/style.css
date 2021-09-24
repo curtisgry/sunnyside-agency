@@ -131,6 +131,7 @@ body {
     object-fit: cover;
     position: relative; }
     .content__img--caption {
+      width: 51%;
       font-size: 2.3rem;
       color: rgba(35, 48, 62, 0.8);
       padding-top: 33rem;
@@ -169,7 +170,7 @@ body {
     border-radius: 50%;
     margin-bottom: 7rem; }
   .testimonial__text {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;
     line-height: 1.9;
     margin-bottom: 8rem; }

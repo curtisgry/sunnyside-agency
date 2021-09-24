@@ -51,6 +51,7 @@
     position: relative;
 
     &--caption {
+      width: 51%;
       font-size: 2.3rem;
       color: rgba($very-dark-blue, 0.8);
       padding-top: 33rem;
@@ -104,7 +105,7 @@
   }
 
   &__text {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;
     line-height: 1.9;
     margin-bottom: 8rem;

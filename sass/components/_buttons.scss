@@ -1,0 +1,45 @@
+.btn-text {
+  &:link,
+  &:active,
+  &:visited {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: $very-dark-blue;
+    display: inline-block;
+    position: relative;
+  }
+  &::after {
+    content: '';
+    height: 10px;
+    width: 105%;
+    display: inline-block;
+    border-radius: 100px;
+
+    position: absolute;
+    left: -3px;
+    bottom: -3px;
+    z-index: -1;
+    transition: all 0.3s;
+  }
+
+  &--1::after {
+    background-color: rgba($yellow, 0.4);
+  }
+
+  &--1:hover {
+    &::after {
+      background-color: rgba($yellow, 1);
+    }
+  }
+
+  &--2::after {
+    background-color: rgba($soft-red, 0.4);
+  }
+
+  &--2:hover {
+    &::after {
+      background-color: rgba($soft-red, 1);
+    }
+  }
+}

@@ -1,0 +1,195 @@
+.header {
+  height: 80rem;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__heading {
+    font-family: 'Fraunces', sans-serif;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 0.8rem;
+    padding-top: 13rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.content {
+  height: 600px;
+  &__block {
+    width: 100%;
+    position: relative;
+  }
+
+  &__container {
+    width: 61%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__heading {
+    &--primary {
+      font-family: 'Fraunces', sans-serif;
+      font-size: 4.1rem;
+      margin-bottom: 2.5rem;
+      color: $very-dark-blue;
+    }
+  }
+
+  &__text {
+    color: $dark-gray-blue;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+
+    &--caption {
+      font-size: 2.3rem;
+      color: rgba($very-dark-blue, 0.8);
+      padding-top: 33rem;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    &--heading {
+      font-family: 'Fraunces', sans-serif;
+      margin-bottom: 3rem;
+    }
+
+    &--paragraph {
+      color: rgba($very-dark-blue, 0.6);
+      line-height: 1.7;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.testimonial {
+  padding: 15rem;
+  &__heading {
+    font-family: 'Fraunces', sans-serif;
+    color: $gray-blue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+    color: $very-dark-blue;
+    width: 30%;
+  }
+
+  &__img {
+    width: 8rem;
+    border-radius: 50%;
+    margin-bottom: 7rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.9;
+    margin-bottom: 8rem;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__name {
+    font-size: 2rem;
+
+    font-family: 'Fraunces', sans-serif;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $gray-blue;
+  }
+}
+
+.image-row {
+  display: flex;
+  &__img {
+    width: 25%;
+  }
+}
+
+.footer {
+  background-color: lighten($dark-cyan-2, 24%);
+  filter: brightness(108%);
+  padding: 16rem 0 8rem;
+  position: relative;
+
+  &__logo {
+    margin: 0 auto;
+    transform: scale(1.3);
+    fill: rgba($dark-cyan-1, 0.82);
+    margin-bottom: 4rem;
+
+    &--container {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-59px, 0);
+    }
+  }
+
+  &__nav {
+    width: 21%;
+    margin: 0 auto 8rem;
+    &--list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1.83rem;
+    }
+    &--item {
+      display: inline-block;
+    }
+    &--link {
+      text-decoration: none;
+
+      &:link,
+      &:active,
+      &:visited {
+        color: rgba($dark-cyan-1, 0.82);
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    width: 11%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+
+.attribution {
+  margin-top: 4rem;
+}

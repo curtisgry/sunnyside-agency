@@ -3,6 +3,10 @@
   position: relative;
 
   color: $white;
+  @include respond(phone) {
+    color: black;
+  }
+
   width: 100%;
 
   &__icon {
@@ -10,11 +14,44 @@
     top: 5.5rem;
     width: 15rem;
     display: inline-block;
+    @include respond(phone) {
+      top: 3.5rem;
+      left: 2.5rem;
+      width: 12rem;
+    }
   }
 
   &__list {
     list-style: none;
     float: right;
+    @include respond(phone) {
+      font-size: 1.7rem;
+      font-weight: bold;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      left: 50%;
+      top: 11rem;
+      transform: translate(-50%, 0%);
+      background-color: white;
+      color: $gray-blue;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 3rem;
+      width: 84%;
+
+      &::before {
+        content: '';
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -15px;
+        right: -1px;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+      }
+    }
   }
 
   &__item {
@@ -22,12 +59,18 @@
 
     &:not(:last-child) {
       margin-right: 5.4rem;
+      @include respond(phone) {
+        margin: 2rem 0;
+      }
+    }
+    @include respond(phone) {
+      margin: 2rem 0;
     }
   }
 
   &__link {
     text-decoration: none;
-    color: $white;
+    color: inherit;
 
     &--cta {
       font-family: 'Fraunces', sans-serif;
@@ -40,10 +83,42 @@
       border-radius: 100px;
       transition: all 0.2s;
 
+      @include respond(phone) {
+        background-color: $yellow;
+        font-size: 1.3rem;
+        padding: 1.5rem 2.5rem;
+      }
+
       &:hover {
         color: $white;
         background-color: rgba($white, 0.3);
+        @include respond(phone) {
+          color: $very-dark-blue;
+          background-color: rgba($yellow, 0.7);
+        }
       }
+    }
+  }
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  right: 3rem;
+  top: 3.5rem;
+  transition: all 0.2s;
+  @include respond(phone) {
+    display: block;
+  }
+
+  &__toggle {
+    display: none;
+    &:checked + label {
+      transform: rotate(-90deg);
+    }
+    &:checked ~ ul {
+      opacity: 1;
+      pointer-events: all;
     }
   }
 }

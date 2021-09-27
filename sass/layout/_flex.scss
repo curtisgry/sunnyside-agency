@@ -1,7 +1,13 @@
 .flex-section {
   display: flex;
+  @include respond(phone) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .flex-item-half {
-  width: 50%;
+  @include respond(phone) {
+    width: 100%;
+  }
 }
